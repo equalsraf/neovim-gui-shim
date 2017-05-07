@@ -129,6 +129,10 @@ GuiClose() notifies the GUI that it should close. The GUI may or may not
 respect this request. The shim setups an autocommand to call this function
 when the |'VimLeave'| event occurs.
 
+GuiStart({cmd})						*GuiStart()*
+GuiStart is a wrapper around jobstart that launches a GUI process.
+The argument {cmd} specifies the command to be executed.
+
 ==============================================================================
 4. Internals
 
